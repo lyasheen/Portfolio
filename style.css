@@ -1,7 +1,7 @@
 body {
     background-color: #1c1a17;
     background-position: center;
-    background-image: url(/Images/header_tof.png);
+    background-image: url(./Images/header_tof.png);
     background-size: 500px 900px;
     background-repeat: no-repeat;
     height: 840px;
@@ -252,12 +252,12 @@ h4 {
 
   .contact-wrapper {
     display: flex;
-    /* flex-direction: row;
-    justify-content: space-between; */
     margin: 0 auto;
     padding: 20px;
     position: relative;
     width: 840px;
+    height: 500px;
+    z-index: -1;
   }
   
   /* Left contact page */
@@ -265,26 +265,33 @@ h4 {
     /*float: left;*/
     max-width: 400px;
     font-weight: 400;
+    justify-content: space-around;
   }
   
   .form-control, 
   textarea {
     max-width: 400px;
     background-color: #1c1a17;
+
     color: #fff;
     letter-spacing: 1px;
+    border-radius: 15px;
   }
   
   .send-button {
     margin-top: 15px;
     height: 34px;
     width: 400px;
+    background-color: #D8B146;
+    color:rgb(28, 26, 23);
   }
   
   .send-text {
     display: block;
     margin-top: 10px;
     letter-spacing: 2px;
+    font-weight: 800;
+    font-family: "Playfair Display SC", serif;
   }
   
   /* Begin Right Contact Page */
@@ -368,8 +375,4 @@ h4 {
   
   .social-media-list li:hover a {
     color: #1c1a17;
-  }
-  
-  hr {
-    border-color: rgba(255,255,255,.6);
   }
